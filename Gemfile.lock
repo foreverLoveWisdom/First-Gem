@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mega_lotto (0.1.0)
+    first_gem_mega_lotto (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -88,9 +88,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  first_gem_mega_lotto!
   guard
   guard-rspec
-  mega_lotto!
   pry-byebug
   rake (~> 12.0)
   rspec (~> 3.0)
