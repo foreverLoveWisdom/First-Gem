@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    first_gem_mega_lotto (0.2.0)
+    first_gem_mega_lotto (0.2.1)
 
 GEM
   remote: https://rubygems.org/
