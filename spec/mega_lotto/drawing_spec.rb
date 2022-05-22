@@ -12,7 +12,7 @@ module MegaLotto
         expect(draw).to be_a(Array)
       end
 
-      it 'returns an array with 5 elements' do
+      it 'returns an array with 6 elements' do
         expect(draw.length).to eq(6)
       end
 

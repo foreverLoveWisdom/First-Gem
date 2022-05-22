@@ -3,8 +3,10 @@
 module MegaLotto
   # Drawing business logic
   class Drawing
+    attr_accessor :drawing_count
+
     def draw
-      Array.new(6) { single_random_draw }
+      Array.new(MegaLotto.configuration.drawing_count) { single_random_draw }
     end
 
     private
