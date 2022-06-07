@@ -2,10 +2,10 @@
 
 module MegaLotto
   class Configuration
-    attr_writer :drawing_count
+    attr_accessor :drawing_count
 
-    def drawing_count
-      @drawing_count ||= 6
+    def initialize
+      @drawing_count = 6
     end
   end
 end

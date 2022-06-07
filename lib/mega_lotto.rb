@@ -1,12 +1,8 @@
 # frozen_string_literal: true
 
+require 'pry-byebug'
 require 'mega_lotto/version'
 require 'mega_lotto/configuration'
-
-begin
-  require 'pry-byebug'
-rescue LoadError
-end
 
 module MegaLotto
   class Error < StandardError; end
@@ -20,5 +16,9 @@ module MegaLotto
 
   def self.configure
     yield(configuration)
+  end
+
+  def self.reset
+    @configuration = Configuration.new
   end
 end
